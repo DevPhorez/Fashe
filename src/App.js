@@ -1,6 +1,11 @@
+import Navbar from "./Component/Navbar/Navbar";
+
 function App() {
     return (
-        <div className="App"></div>
+        <div>
+	        <Navbar />
+	        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        </div>
     );
 }
 
