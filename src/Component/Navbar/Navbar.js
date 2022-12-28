@@ -46,40 +46,44 @@ function Navbar () {
 	})
 	
 	return (
-		<div className='position-fixed w-100'>
-			<nav className={`${ scroll > 50 && 'padding-animation' } navbar navbar-expand-lg bg-light nav-shadow nav-top`}>
-				<div className="container-fluid">
-					<a className="navbar-brand" href="#">
-						<img src="/Images/logo.png" alt="logo"/>
-					</a>
-					<button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-					        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					        aria-expanded="false" aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon"></span>
-					</button>
-					
-					<div className="collapse navbar-collapse">
-						<div className="form w-50">
-							<input type="text" placeholder='Search...' name="text" autoComplete="off" required/>
-							<label htmlFor="text" className="label-name"></label>
-						</div>
-						<div className="account ms-auto">
+		<>
+			<div className='d-none d-sm-block' style={ { height: 128, width: '100%' } }></div>
+			<div className='d-block d-sm-none' style={ { height: 56, width: '100%' } }></div>
+			<div className='position-fixed top-0 w-100 header'>
+				<nav className={`${ scroll > 50 && 'padding-animation' } navbar navbar-expand-lg bg-light nav-shadow nav-top`}>
+					<div className="container-fluid">
+						<a className="navbar-brand" href="#">
+							<img src="/Images/logo.png" alt="logo"/>
+						</a>
+						<button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+						        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						        aria-expanded="false" aria-label="Toggle navigation">
+							<span className="navbar-toggler-icon"></span>
+						</button>
+						
+						<div className="collapse navbar-collapse">
+							<div className="form w-50">
+								<input type="text" placeholder='Search...' name="text" autoComplete="off" required/>
+								<label htmlFor="text" className="label-name"></label>
+							</div>
+							<div className="account ms-auto">
 							<span className='line'>
 								<CgProfile fontSize={24} />
 							</span>
-							<span>
+								<span>
 								<FaSignOutAlt fontSize={24} />
 							</span>
+							</div>
 						</div>
 					</div>
-				</div>
-			</nav>
-			<nav className={`${ scroll > 50 && 'hide-animation' } navbar navbar-expand-lg bg-light d-sm-block d-none`}>
-				<div className="container-fluid">
-					<CustomNavbar />
-				</div>
-			</nav>
-		</div>
+				</nav>
+				<nav className={`${ scroll > 50 && 'hide-animation' } navbar navbar-expand-lg bg-light d-sm-block d-none`}>
+					<div className="container-fluid">
+						<CustomNavbar />
+					</div>
+				</nav>
+			</div>
+		</>
 	)
 }
 
