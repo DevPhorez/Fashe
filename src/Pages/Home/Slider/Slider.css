@@ -39,7 +39,7 @@
 
 .swiper-button-next, .swiper-button-prev {
     background-color: #fff;
-    border: 2px solid #c1c1c1;
+    border: 1px solid #c1c1c1;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -47,22 +47,22 @@
     color: #000;
 }
 
-.swiper-button-next {
+.main-slider .swiper-button-next {
     top: 85%;
     left: 130px;
 }
 
-.swiper-button-next:after {
+.main-slider .swiper-button-next:after {
     font-size: 18px;
     font-weight: 900;
 }
 
-.swiper-button-prev {
+.main-slider .swiper-button-prev {
     top: 85%;
     left: 50px;
 }
 
-.swiper-button-prev:after {
+.main-slider .swiper-button-prev:after {
     font-size: 18px;
     font-weight: 900;
 }

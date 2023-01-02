@@ -49,3 +49,16 @@
 .form input:valid + .label-name::after {
     transform: translateX(0%);
 }
+
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.pointer {
+    cursor: pointer;
+}

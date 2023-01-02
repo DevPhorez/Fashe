@@ -7,7 +7,7 @@ import 'swiper/css/navigation'
 
 import './Slider.css'
 
-import { Navigation, Autoplay, Pagination } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 
 function Slider () {
 	return (
@@ -15,15 +15,11 @@ function Slider () {
 			<Swiper
 				slidesPerView={1}
 				navigation={true}
-				modules={[Navigation, Autoplay, Pagination]}
+				modules={[Navigation, Autoplay]}
 				autoplay={true}
 				loop={true}
-				pagination={{
-					enabled: true,
-					clickable: true,
-				}}
 				
-				className='mySwiper user-select-none'>
+				className='mySwiper main-slider user-select-none'>
 				<SwiperSlide>
 					<img src="/Images/slides/page 1.jpg" alt="page 1"/>
 				</SwiperSlide>
@@ -37,7 +33,7 @@ function Slider () {
 					<img src="/Images/slides/page 4.jpg" alt="page 4"/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img className='img-fluid' src="/Images/slides/page 5.jpg" alt="page 5"/>
+					<img src="/Images/slides/page 5.jpg" alt="page 5"/>
 				</SwiperSlide>
 			</Swiper>
 		</>

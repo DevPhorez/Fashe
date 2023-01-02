@@ -1,0 +1,9 @@
+.fashe-categories {
+    margin-top: 3rem;
+}
+
+.fashe-categories p {
+    font-size: 12px;
+    color: var(--bs-dark);
+    font-weight: 700;
+}

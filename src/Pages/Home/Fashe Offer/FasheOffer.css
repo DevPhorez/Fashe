@@ -1,0 +1,51 @@
+.fashe-offer {
+    width: 100%;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+.fashe-offer > div {
+    border: 1px solid #e0e0e6;
+    border-radius: 16px;
+}
+
+
+.fashe-offer > h3 {
+    margin-bottom: 2.5rem;
+}
+
+.fashe-offer .item {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.fashe-offer .item:not(.last-items) {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.fashe-offer .item:not(.bottom-item) {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.fashe-offer .item .parent {
+    width: 100px !important;
+    height: 100px !important;
+    background-color: rgba(0,0,0,.05);
+    margin: auto;
+}
+
+.fashe-offer .item .parent img {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.fashe-offer .item .parent div:before {
+    content: "";
+    background-color: rgba(0,0,0,.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
