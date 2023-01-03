@@ -1,14 +1,27 @@
 import './FasheOffer.css'
 import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 
 
 function FasheOffer () {
+	
+	const [windowX, setWindowX] = React.useState(window.innerWidth)
+	
+	let slidesPerView = 7
+	if (windowX <= 992) {
+		slidesPerView = 3
+	} else {
+		slidesPerView = 7
+	}
+	
+	window.addEventListener('resize', () => setWindowX(window.innerWidth))
+	
 	return (
 		<div className='container-fluid fashe-offer mb-5'>
 			<h3 className='text-center'>Fashe<b className='text-danger fw-bold fs-1'>.</b> Offer</h3>
 			<div>
 				<Swiper
-					slidesPerView={7}
+					slidesPerView={slidesPerView}
 					className='mySwiper user-select-none'>
 					<SwiperSlide>
 						<div className="item top-item">

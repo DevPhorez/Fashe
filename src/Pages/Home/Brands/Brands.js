@@ -6,14 +6,32 @@ import { FreeMode, Navigation, Autoplay } from "swiper";
 import 'swiper/css/free-mode'
 
 import { GiStarFormation } from 'react-icons/gi'
+import React from "react";
 
 function Brands () {
+	
+	const [windowX, setWindowX] = React.useState(window.innerWidth)
+	
+	let slidesPerView = 9
+	
+	if (windowX < 768) {
+		slidesPerView = 3
+	} else if (windowX >= 768 && windowX < 992) {
+		slidesPerView = 5
+	} else if (windowX >= 992 && windowX < 1200) {
+		slidesPerView = 7
+	} else if (windowX >= 1200) {
+		slidesPerView = 9
+	}
+	
+	window.addEventListener('resize', () => setWindowX(window.innerWidth))
+	
 	return (
 		<div className='container-fluid brands pt-3 mb-5'>
 			<div>
 				<h4 className='text-center mt-3'><GiStarFormation color='#f9bc00' fontSize={28} /> The Most Popular Brands</h4>
 				<Swiper
-					slidesPerView={9}
+					slidesPerView={slidesPerView}
 					freeMode={true}
 					navigation={true}
 					loop={true}

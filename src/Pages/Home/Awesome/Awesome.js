@@ -28,7 +28,7 @@ function Awesome () {
 	
 	return (
 		<div className="container-fluid awesome">
-			<h3 className='ms-4 mb-4'>Awesome</h3>
+			<h3 className='mb-4 text-center'>Awesome</h3>
 			<Swiper
 				slidesPerView={slidesPerView}
 				navigation={true}
