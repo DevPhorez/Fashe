@@ -1,0 +1,36 @@
+.readings {
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.readings .more {
+    display: flex;
+    align-items: center;
+    color: #19bfd3;
+    cursor: pointer;
+}
+
+.readings .more span {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.readings .card {
+    border: 1px solid #e0e0e6;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.readings .card img {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.readings .card p {
+    line-height: 2;
+    padding: 1rem;
+}
+
+.readings .col-3 {
+    padding: 0 .5rem !important;
+}
